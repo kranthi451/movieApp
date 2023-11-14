@@ -1,4 +1,4 @@
-package com.example.movieApp.entity;
+package com.springboot.movieApp.entity;
  
 import java.time.LocalDateTime;
  
@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
  
+
 @Entity
 @Table(name="movie")
 public class Movie {
@@ -28,7 +29,7 @@ public class Movie {
 	private String coverPhotoUrl;
 	@Column(name="duration", nullable=false)
 	private double duration;
-	@Column(name="duration", nullable=false)
+	@Column(name="genre", nullable=false)
 	private String genre;
 
 	public String getGenre() {
